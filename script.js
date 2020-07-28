@@ -351,6 +351,7 @@ startButton.addEventListener("click", function(event) {
     score =0;
     indexQuiz =0;
     renderQuiz();
+    quizCount.textContent= "1";
     
   }
 

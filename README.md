@@ -13,13 +13,19 @@ Once que quiz is completed, the program will show the score of the user with a l
 the current user can type his/her name in a text box to save the name and the score for future results.
 if the user wants to repeat the quiz just need to click in restart button to try again.
 
+Link:    https://aldocarrillo.github.io/HW4-CodeQuiz/index.html
+
+
 Start Page
-![start](/screenshots/start.png)
+
+![start](/screenshots/start.PNG)
 
 Questiones and Answers Page
-![questione](/screenshots/questione.png)
+
+![questione](/screenshots/questione.PNG)
 
 Final Scores Page
-![final](/screenshots/final.png)
+
+![final](/screenshots/final.PNG)
 
 
