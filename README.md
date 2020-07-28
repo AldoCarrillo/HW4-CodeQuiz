@@ -12,7 +12,7 @@ if the asnwer is incorrect the program will show a messare "incorrect" and the u
 Once que quiz is completed, the program will show the score of the user with a list with scores form other users.
 the current user can type his/her name in a text box to save the name and the score for future results.
 if the user wants to repeat the quiz just need to click in restart button to try again.
-<<<<<<< HEAD
+
 
 Link:    https://aldocarrillo.github.io/HW4-CodeQuiz/index.html
 ===============================================================================================================
