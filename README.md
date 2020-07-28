@@ -14,12 +14,12 @@ the current user can type his/her name in a text box to save the name and the sc
 if the user wants to repeat the quiz just need to click in restart button to try again.
 
 Start Page
-![start](/start.png)
+![start](/screeshots/start.PNG)
 
 Questiones and Answers Page
-![questione](/questione.png)
+![questione](/screeshots/questione.PNG)
 
 Final Scores Page
-![final](/final.png)
+![final](/screeshots/final.PNG)
 
 
