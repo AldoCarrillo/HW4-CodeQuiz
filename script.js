@@ -1,10 +1,13 @@
+
+/*here are the main containers of the html file  */
+
 var quizdiv = document.querySelector("#quiz-div");
 var namediv = document.querySelector("#name-form");
 var h1Start = document.querySelector("#h1start");
 var questionText = document.querySelector("#questioneText")
 var feedBackAnswer = document.querySelector("#correct-answer")
 
-
+/*here are the elements of the html file  */
 var quizList = document.querySelector("#quiz-list");
 var quizCount = document.querySelector("#quiz-count");
 var quizScore = document.querySelector("#quiz-score");
@@ -15,13 +18,13 @@ var quizResults = document.querySelector("#results-list");
 var startButton = document.querySelector("#start-button");
 var clearButton = document.querySelector("#clear-button");
 
-
+/*gloobal variables need it  */
 var answersArray =[] ;
 var rightAnswersArray = [];
 var score = 0;
 
 
-
+/* Structure of the quiz, questiones and answers  based in a google example */
 var quiz = [
     {
       question: "Who invented JavaScript?",
@@ -175,10 +178,12 @@ var quiz = [
     }
   ];
 
-
+/*here is whre the proggrams starts */
 var indexQuiz = 0;
 startQuiz();
 
+
+/*main fucntion starts the quiz */
 function startQuiz() {
     startButton.setAttribute("style", "visibility: visible;");
     quizdiv.setAttribute("style", "display: none;");
@@ -190,6 +195,7 @@ function startQuiz() {
     renderQuiz();
 }
 
+/*function loads the questione and answers list*/
 function renderQuiz(){
    
    if(indexQuiz >= 15){
@@ -227,6 +233,7 @@ function renderQuiz(){
 
 }
 
+/*function clear the previus questione */
 function nextQuestionQuiz(){
   quizList.removeChild[0];
   quizList.removeChild[1];
@@ -238,6 +245,7 @@ function nextQuestionQuiz(){
 
 }
 
+/*function when finish with all questiones */
 function endQuiz(){
   startButton.setAttribute("style", "visibility: invisible;");
   quizdiv.setAttribute("style", "display: none;");
@@ -255,7 +263,7 @@ function endQuiz(){
   
 }
 
-
+/*fuction loads the scores */
 function loadResults(){
 
   if(JSON.parse(localStorage.getItem("names")))
@@ -273,7 +281,7 @@ function loadResults(){
 
 }
 
-
+/*fucntion gives the final score to your quiz */
 function checkScore(){
 
   quiz.forEach(element => {
@@ -290,6 +298,7 @@ function checkScore(){
 
 }
 
+/*function check every asnwwer if is correct or incorrect */
 function checkAnswer(ans){
   if(quiz[indexQuiz].correctAnswer == ans){
     feedBackAnswer.textContent = "Correct" ;
@@ -312,7 +321,7 @@ function checkAnswer(ans){
     
 }
 
-
+/*listener to save your name in the scores storage */
 nameText.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
       event.preventDefault();
@@ -335,7 +344,7 @@ nameText.addEventListener("keydown", function(event) {
 
 });
 
-
+/*Main button to star or restart the quiz */
 startButton.addEventListener("click", function(event) {
   startButton.setAttribute("style","visibility: hidden;");
   quizdiv.setAttribute("style","display: block;");
@@ -361,6 +370,7 @@ startButton.addEventListener("click", function(event) {
     
 } );
 
+/*Button to clear the storaged scores */
 clearButton.addEventListener("click", function(event) {
   localStorage.clear();
   quizResults.innerHTML = "";
@@ -370,7 +380,7 @@ clearButton.addEventListener("click", function(event) {
     
 } );
 
-
+/*Listener to the list of answers for every questione add the user questiones to an array */
 quizList.addEventListener("click", function(event) {
   
   var element = event.target;
@@ -419,7 +429,7 @@ quizList.addEventListener("click", function(event) {
 
 
 
-
+/*timer of 5 minutes displayed in the page */
   /* code for this timer https://codepen.io/ishanbakshi/pen/pgzNMv*/
   
   function startTimer() {
