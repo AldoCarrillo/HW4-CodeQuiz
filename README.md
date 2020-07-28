@@ -15,11 +15,7 @@ if the user wants to repeat the quiz just need to click in restart button to try
 <<<<<<< HEAD
 
 Link:    https://aldocarrillo.github.io/HW4-CodeQuiz/index.html
-
-
-=======
-link : https://aldocarrillo.github.io/HW4-CodeQuiz/index.html
->>>>>>> c7b55769b395d2249958ea4a1258740587de5d67
+===============================================================================================================
 Start Page
 
 ![start](/screenshots/start.PNG)
